@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="left-up" width="48" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="12">
+ <tileset firstgid="1" source="Terrain.tsx"/>
+ <tileset firstgid="243" source="falling_platform.tsx"/>
+ <tileset firstgid="244" source="static_spikes.tsx"/>
+ <tileset firstgid="245" source="spikes.tsx"/>
+ <tileset firstgid="249" source="coin.tsx"/>
+ <tileset firstgid="250" source="Backgrounds.tsx"/>
+ <tileset firstgid="257" name="instruction3" tilewidth="16" tileheight="16" tilecount="104" columns="26">
+  <image source="../image/instruction3.png" width="420" height="64"/>
+ </tileset>
+ <tileset firstgid="361" source="end_point.tsx"/>
+ <layer id="1" name="background" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0iEOADAIBEH+/2RUPUlFayBhRnEGtRHATTZv6KR/NtM/m/30muWu+/UfADDLAYZVIDs=
+  </data>
+ </layer>
+ <layer id="11" name="instruction" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztzkOSBAAURMHusW3btm3b9v1PMHmI6c3EfxG5rahEIoqiKIqiKIqiKIqi/1QymUikkU4GmWSRTQ655JFPAYUUUUwJpZRRTgWVVFFNDbXUJVP3v952A4000UwLrbTRTgeddNFND7300c8AgwwxzAijjDHORAr/T9qeYpoZZpljngUWWWKZFVZZY50NNtlimx122WOfAw45SuH/Y9snnHLGORdccsU1N9xyxz0PPPLEMy+88sY7H3zyxTc/Kfwf/X2/NCEVvQ==
+  </data>
+ </layer>
+ <layer id="2" name="platforms" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0l0KQEAYhWEbwK17LAI7EWEFQtiBEtZgq46i5oIkzBi+U8+N/LxlFOV7M17qb/0BNIKFF/ozaAVLqZ/6qV+afhW0hS5h/8wEC2xJ+x1wwZO0n/0PvPsjiHckG986eh/v/hKqHTX139q/nhX2XJztHw882d9BDwPz7HptC3sfj/4cfMGKC/1v85d+Go1G47EJxygang==
+  </data>
+ </layer>
+ <layer id="8" name="falling_platforms" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6D3r2sBY3xOSEACAHwy7QAAAHDKArlxAPQ=
+  </data>
+ </layer>
+ <layer id="4" name="static_spikes" width="48" height="27" locked="1">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAIA7D514sAnv0IoE2aAAAA/DINANwW0/MB6Q==
+  </data>
+ </layer>
+ <layer id="5" name="active_spikes" width="48" height="27" locked="1">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztw7EJAAAIA7D+/6+7J3RwEhJIAgDAxZQAAPDZAmttB6k=
+  </data>
+ </layer>
+ <layer id="3" name="coins" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0kENAAAIAzH8O+aHBX4EaBVclkUAsFlOBzxia67xaQAAOgrKOALs
+  </data>
+ </layer>
+ <layer id="7" name="end_point" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7AhF/8GMLGEp1XQBKBj53sAAAAAtB2t+QBr
+  </data>
+ </layer>
+ <objectgroup id="9" name="collided_objects" locked="1">
+  <object id="1" x="128" y="32" width="512" height="32"/>
+  <object id="2" x="640" y="64" width="32" height="224"/>
+  <object id="3" x="128" y="288" width="512" height="32"/>
+  <object id="4" x="96" y="64" width="32" height="224"/>
+  <object id="5" x="240" y="256" width="48" height="32"/>
+  <object id="6" x="320" y="208" width="128" height="80"/>
+  <object id="7" x="576" y="144" width="64" height="16"/>
+  <object id="8" x="592" y="160" width="48" height="16"/>
+  <object id="9" x="608" y="176" width="32" height="16"/>
+  <object id="10" x="624" y="192" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="10" name="player" locked="1">
+  <object id="11" x="176" y="240"/>
+ </objectgroup>
+</map>

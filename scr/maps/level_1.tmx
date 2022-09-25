@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="left-up" width="48" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="7">
+ <tileset firstgid="1" source="Terrain.tsx"/>
+ <tileset firstgid="243" source="spikes.tsx"/>
+ <tileset firstgid="247" source="coin.tsx"/>
+ <tileset firstgid="248" name="instruction" tilewidth="16" tileheight="16" tilecount="168" columns="28">
+  <image source="../image/instruction.png" width="448" height="96"/>
+ </tileset>
+ <tileset firstgid="416" name="instruction2" tilewidth="16" tileheight="16" tilecount="66" columns="33">
+  <image source="../image/instruction2.png" width="531" height="37"/>
+ </tileset>
+ <tileset firstgid="482" source="Backgrounds.tsx"/>
+ <tileset firstgid="489" source="end_point.tsx"/>
+ <layer id="1" name="background" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0jENAAAIwDDw7xIlmCAhgfbbvwjgssrdhk3+5zP/AwAwpQHKoRVJ
+  </data>
+ </layer>
+ <layer id="2" name="platforms" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztzrsNgDAQg+F0vGYACkYg7MUcjINgBgTswCy4SEUd6RxiS5901/3OaYybyeTav8FjZI/Qf8Ji5FC/+tWv/p/3F1B+VAn1t1CDhwY66BPqH2GCIdw+/Az9F6xG7gj9LHLr1zRN0zTmvWwwL4w=
+  </data>
+ </layer>
+ <layer id="5" name="active_spikes" width="48" height="27" locked="1">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAIA7D5t4sBLIyXtEkTAAD4YYoAANwsyX0IjA==
+  </data>
+ </layer>
+ <layer id="3" name="coins" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztxaEBAAAIA6D9/7DVvOAFQiEBAIA2xwAA/LNB1wLm
+  </data>
+ </layer>
+ <layer id="7" name="end_point" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6DbP6ktjOF0kIAEAOCmru0BAAD8N5CFAOs=
+  </data>
+ </layer>
+ <layer id="12" name="instruction" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1sPSHWEUhtHzx7Zt27Zt27Zt27Zt27adu4iTlXlGSZ1Jqp+qNeve9Q6/UOj/bUNEKLSRTWxmC1vZxnZ2sJNd7GYPe9nHfg5wkEMc5ghHOcZxTnCSU5zmDGc5x3kuRPzb/ov+v8RlrnCVa1znBje5xW3ucJd73OcBD3nEY57wlGc85wUvecVr3vCWd7znAx//cX9QUFBQUFBQUFBQ0N/1ic984Svf+M4Pfv7+wFs9gkhEJgpRiUZ0YhCTWMQmDnGJR3wSkJBEJA7Duz+Jm0lJRnJSkJJUpCYNaUlHejKQkUxkJgtZyUZ2cpCTXOQmD3nJR/4w7C/gZkEKUZgiFKUYxSlBSUpRmjKUpRzlqUBFKlGZKlSlGtWpQU1qUTsM++u4WZd61KcBDWlEY5rQlGY0pwUtaUVr2tCWdrSnAx3pRGe60JVudA/D/h5u9qQXvelDX/rRnwEMZBCDGcJQhjGcEYxkFKMZw1jGMZ4JTGQSk8Owf4qbU5nGdGYwk1nMZg5zmcd8FrCQRSxmCUtZxnJWsJJVrGYNa1nH+jDsDwr6U78AFsZsEA==
+  </data>
+ </layer>
+ <objectgroup id="9" name="collided_objects" locked="1">
+  <object id="1" x="112" y="48" width="32" height="224"/>
+  <object id="2" x="144" y="240" width="480" height="32"/>
+  <object id="3" x="624" y="48" width="32" height="224"/>
+  <object id="4" x="144" y="48" width="480" height="32"/>
+  <object id="5" x="272" y="192" width="96" height="48"/>
+ </objectgroup>
+ <objectgroup id="10" name="player" locked="1">
+  <object id="6" x="192" y="192"/>
+ </objectgroup>
+</map>

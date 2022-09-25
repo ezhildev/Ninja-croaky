@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="left-up" width="48" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="11">
+ <tileset firstgid="1" source="Backgrounds.tsx"/>
+ <tileset firstgid="8" source="coin.tsx"/>
+ <tileset firstgid="9" source="end_point.tsx"/>
+ <tileset firstgid="19" source="falling_platform.tsx"/>
+ <tileset firstgid="20" source="spikes.tsx"/>
+ <tileset firstgid="24" source="static_spikes.tsx"/>
+ <tileset firstgid="25" source="Terrain.tsx"/>
+ <layer id="1" name="background" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0qENACAQwMBX7D8yihFIIblz9Z0BjvV4w0313/6nVP/tf0r13/6nVP/tf+AXG9zUAS0=
+  </data>
+ </layer>
+ <layer id="2" name="platforms" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztlkEKgDAMBPMT9T3qZ0TfYNU/+FZz6MUKLQXNBtmBuc9hAwkiEih9wVk9nbtk+jfxzyrsR8J+LKX+Rm2jHaTwTtpT6u/VITqa1z5Je/6+H+9Y9X91R1b9X90R94OF/VjYj4X/jy01/8+uTs49Mv2U1noB+T8lHg==
+  </data>
+ </layer>
+ <layer id="8" name="falling_platforms" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0rENACAIRUF2cP9dbS2JIQTN3QAU7xMBAEy2Hr//o9tmWnPK/oO/qVHV0R45XZ3sAdBjA7dSAL8=
+  </data>
+ </layer>
+ <layer id="4" name="static_spikes" width="48" height="27" locked="1">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMA6DKmH+lU9C7DyQkAAAAAFs3DnQPOtYDAQ==
+  </data>
+ </layer>
+ <layer id="6" name="non_active_spikes" width="48" height="27" locked="1">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt1qENAAAIBLHfgv03xaMQCESb3A6XAMA/NQIAuOY3AHYa0woAuQ==
+  </data>
+ </layer>
+ <layer id="5" name="active_spikes" width="48" height="27" locked="1">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt1jENADAMwLCAKH+s+wug2mFL4ZACgJoVAAC3/BjwqwfxywCh
+  </data>
+ </layer>
+ <layer id="3" name="coins" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJzt1rENACAMBLGU2X9iemokPpE9wZVXBcBL/TvgktYDAOyT9htpPQDTHVhPACE=
+  </data>
+ </layer>
+ <layer id="7" name="end_point" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztziEBAAAIA7Bb+hdGPQOILcESAKDmOgAAAPDMAoqoAAo=
+  </data>
+ </layer>
+ <objectgroup id="9" name="collided_objects" locked="1">
+  <object id="1" x="64" y="144" width="64" height="32"/>
+  <object id="2" x="64" y="336" width="64" height="32"/>
+  <object id="3" x="352" y="208" width="64" height="32"/>
+  <object id="4" x="640" y="144" width="64" height="32"/>
+  <object id="5" x="640" y="336" width="64" height="32"/>
+  <object id="7" x="64" y="368" width="640" height="16"/>
+  <object id="8" x="704" y="64" width="16" height="304"/>
+  <object id="9" x="64" y="48" width="640" height="16"/>
+  <object id="10" x="48" y="64" width="16" height="304"/>
+ </objectgroup>
+ <objectgroup id="10" name="player" locked="1">
+  <object id="6" x="384" y="144"/>
+ </objectgroup>
+</map>

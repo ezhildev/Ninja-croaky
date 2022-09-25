@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="left-up" width="48" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="37">
+ <tileset firstgid="1" source="Backgrounds.tsx"/>
+ <tileset firstgid="8" source="coin.tsx"/>
+ <tileset firstgid="9" source="end_point.tsx"/>
+ <tileset firstgid="19" source="falling_platform.tsx"/>
+ <tileset firstgid="20" source="spikes.tsx"/>
+ <tileset firstgid="24" source="static_spikes.tsx"/>
+ <tileset firstgid="25" source="Terrain.tsx"/>
+ <tileset firstgid="267" source="moving_platforms.tsx"/>
+ <tileset firstgid="275" source="saw.tsx"/>
+ <layer id="1" name="background" width="48" height="27" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0rEJACAQwMAH99/ZyhEkCndd+swAx3q84ab6b/9Tqv/2P6X6b/9Tqv/2P/CLDXiKAJc=
+  </data>
+ </layer>
+ <layer id="2" name="platforms" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJgEAQxdBf/tYmWoO49uDZrWBAEDKHBHJ/I8lw/+F9/TT/KPxX+ndGP5l+Nv1s+tn0s+ln08+mn00/W+Wf6635d+F3//oLFYRGng==
+  </data>
+ </layer>
+ <layer id="8" name="falling_platforms" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <layer id="13" name="moving_platforms" width="48" height="27">
+  <properties>
+   <property name="speed" type="float" value="4"/>
+   <property name="x_direction" type="int" value="1"/>
+   <property name="x_end" type="float" value="576"/>
+   <property name="x_start" type="float" value="160"/>
+   <property name="y_direction" type="int" value="0"/>
+   <property name="y_end" type="float" value="0"/>
+   <property name="y_start" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <layer id="4" name="static_spikes" width="48" height="27">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <layer id="6" name="non_active_spikes" width="48" height="27">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <layer id="5" name="active_spikes" width="48" height="27">
+  <properties>
+   <property name="rotation" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <layer id="12" name="saw" width="48" height="27">
+  <properties>
+   <property name="speed" type="float" value="4"/>
+   <property name="x_direction" type="int" value="1"/>
+   <property name="x_end" type="float" value="576"/>
+   <property name="x_start" type="float" value="160"/>
+   <property name="y_direction" type="int" value="0"/>
+   <property name="y_end" type="float" value="0"/>
+   <property name="y_start" type="float" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <layer id="3" name="coins" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <layer id="7" name="end_point" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U1/gCFUBAAAAAHwDFEAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="9" name="collided_objects"/>
+ <objectgroup id="10" name="player"/>
+</map>
