@@ -163,7 +163,7 @@ class Player(AnimatedSprite):
         self.Y_ACCELERATION = 2
         self.X_MAX_SPEED = 3.5
         self.Y_MAX_SPEED = 7
-        self.JUMP_HEIGHT = 14
+        self.JUMP_HEIGHT = 15
 
         self.reset((0, 0))
 

@@ -28,7 +28,7 @@
    eJzt1zENAAAIwDDQgH+vGOCHhPaahUUAH1TODQAAwC6/xnUNCUkAUQ==
   </data>
  </layer>
- <layer id="14" name="saw" width="48" height="27" locked="1">
+ <layer id="14" name="saw" width="48" height="27">
   <properties>
    <property name="speed" type="float" value="5"/>
    <property name="x_direction" type="int" value="0"/>
@@ -39,7 +39,7 @@
    <property name="y_start" type="float" value="64"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztxjERAAAIBKA3g/27WsDZc4CJBAAAuNS1HwDgowFwvQAp
+   eJztxjENAAAIA7ChAf9eMcDJQ9JeTQAA4Jeu/QAA3BuOvQAp
   </data>
  </layer>
  <layer id="2" name="platforms" width="48" height="27" locked="1">
