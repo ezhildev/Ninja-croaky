@@ -17,17 +17,17 @@
    eJzt1tEJgzAUheG7hrGdIVpnaLtFh2l1B12iOKIXohAuSVQIaUKP8D8dCR+CYkNEDUIRu3CPzLqe8LfcK7M0/PDD//f+ilNcTeYK7XKjnT2FX1v3uPw6cAbt7DH9b+6z1hfoH7mJG7hZnKMK8Ut7Sc//u9qlMYZfefYU7++dzP/U0+O3d5c/tKfwb47tirWl9P8i+OGH/1g3Mt/onOpO+BE62gJTw1xf
   </data>
  </layer>
- <layer id="8" name="falling_platforms" width="48" height="27" locked="1">
+ <layer id="8" name="falling_platforms" width="48" height="27">
   <data encoding="base64" compression="zlib">
-   eJzt0kENADAIA0A8zL9XBPDhsUCW3Slo2kYAAL862wEobEKXr3CbT83RNfCaBDX9AGA=
+   eJzt0sEJADAIA0B36P67+vYpFKX0boKQJAIA+NXZDkBhDzr8hZv8aZa+gdckNpUAYA==
   </data>
  </layer>
- <layer id="4" name="static_spikes" width="48" height="27" locked="1">
+ <layer id="4" name="static_spikes" width="48" height="27">
   <properties>
    <property name="rotation" type="float" value="0"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztyqENAEAIBEHKoP9KsZ8nGBRiJll1FwEAAABwWz5t9v8zBXQFrlwBaQ==
+   eJztx6ENAAAIBLEfg/0nZQAEBoFokxOXAAAAAPxXB78FTA0HHAE5
   </data>
  </layer>
  <layer id="12" name="static_spikes" width="48" height="27" locked="1">
@@ -46,7 +46,7 @@
    eJztztEJACAMA9GO0f0ndQGhoKmpcO8/5CIATJbugEv0e9Hv9aq/+jntoF/zQ38v+rU79c/0/i70e9Hv9Xs/gL0FqoIDAQ==
   </data>
  </layer>
- <layer id="6" name="non_active_spikes" width="48" height="27">
+ <layer id="6" name="non_active_spikes" width="48" height="27" locked="1">
   <properties>
    <property name="rotation" type="float" value="0"/>
   </properties>
@@ -62,9 +62,9 @@
    eJztwzENAAAIA7CJwL9W3n0IoE2aAACXqQAAAJ8sIz0APQ==
   </data>
  </layer>
- <layer id="3" name="coins" width="48" height="27">
+ <layer id="3" name="coins" width="48" height="27" locked="1">
   <data encoding="base64" compression="zlib">
-   eJzt1rEJAAAIBLEv3X9iEewdwARuh0sAgFEbAMAn1//4I6ABKG8AIQ==
+   eJzt1qENAEAIBEEk/VdMPnmFw8JMsuI6uAgA4MkfAMBG/edMN3BXAWvvADE=
   </data>
  </layer>
  <layer id="7" name="end_point" width="48" height="27" locked="1">
