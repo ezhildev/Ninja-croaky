@@ -118,7 +118,7 @@ class AnimatedSprite(pygame.sprite.Sprite):
             else: self.__index = no_of_frames - 1
         self.image = self.__animations[self.__current_animation]['frames'][int(self.__index)]
         self.image = pygame.transform.flip(self.image, self.__horizontal_flip, self.__vertical_flip)
-        self.__index += self.__animations[self.__current_animation]['time'] * dt * FPS
+        self.__index += self.__animations[self.__current_animation]['time'] * (dt * FPS)
 
     def play_anim_reverse(self, dt = 1)  -> None:
         '''This method used for assigning currect frame to image variable in reverse order'''
@@ -129,7 +129,7 @@ class AnimatedSprite(pygame.sprite.Sprite):
             else: self.__index = no_of_frames - 1
         self.image = self.__animations[self.__current_animation]['frames'][-int(self.__index+1)]
         self.image = pygame.transform.flip(self.image, self.__horizontal_flip, self.__vertical_flip)
-        self.__index += self.__animations[self.__current_animation]['time'] * dt * FPS
+        self.__index += self.__animations[self.__current_animation]['time'] * (dt * FPS)
 
 
 class Player(AnimatedSprite):
@@ -163,7 +163,7 @@ class Player(AnimatedSprite):
         self.Y_ACCELERATION = 2
         self.X_MAX_SPEED = 3.5
         self.Y_MAX_SPEED = 7
-        self.JUMP_HEIGHT = 20
+        self.JUMP_HEIGHT = 60
 
         self.reset((0, 0))
 
@@ -250,7 +250,7 @@ class Player(AnimatedSprite):
 
         # calculate the height range of jump
         if self.y_direction < 0:
-            self.dist_jump_height += self.y_speed # y speed have negative value 
+            self.dist_jump_height -= self.Y_MAX_SPEED * (dt * FPS) # y speed have negative value 
             if self.dist_jump_height < 0:
                 self.dist_jump_height = 0
                 self.y_direction = 1
@@ -261,7 +261,7 @@ class Player(AnimatedSprite):
 
         # horizontal movement and collision detection
         self.x_speed = lerp(self.X_MAX_SPEED * self.x_direction, self.x_speed, self.X_ACCELERATION)
-        self.body_rect.x += self.x_speed * dt * FPS
+        self.body_rect.x += self.x_speed * (dt * FPS)
         for collision_part, rects_list in rects_dic.items():
             collided_rects = collision_list(self.body_rect, rects_list)
             if collision_part == 'all':
@@ -278,7 +278,7 @@ class Player(AnimatedSprite):
         # vertical movement and collision detection
         self.is_on_ground = False
         self.y_speed = lerp(self.Y_MAX_SPEED * self.y_direction, self.y_speed, self.Y_ACCELERATION)
-        self.body_rect.y += self.y_speed * dt * FPS
+        self.body_rect.y += self.y_speed * (dt * FPS)
         for collision_part, rects_list in rects_dic.items():
             if collision_part == 'all':
                 collided_rects = collision_list(self.body_rect, rects_list)
@@ -340,7 +340,7 @@ class Spike(AnimatedSprite):
                 self.play_anim_reverse(dt)
                 # after 9 ms spike will check the collision 
                 if int(self.time_to_active) < 9:
-                    self.time_to_active += dt * FPS
+                    self.time_to_active += (dt * FPS)
                 else:
                     # check the player is hit on the spike or not
                     if (self.rect.colliderect(self.player.body_rect) and self.is_active) and self.player.is_alive:
@@ -409,7 +409,7 @@ class FallingPlatform(AnimatedSprite):
                     self.timer_is_on = True
 
         if self.timer_is_on and self.timer > 0:
-            self.timer -= dt * FPS
+            self.timer -= (dt * FPS)
             if int(self.timer) <= 0:
                 self.is_fall = True
                 self.sfx.play()
