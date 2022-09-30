@@ -1,5 +1,5 @@
 <h1 align = 'center'>NINJA CROAKY 🐸</h1> 
-<p style='text-align: justify'><b>Ninja croaky</b> is a pixel art puzzle platformer game. Ninja croaky is made with python3, pygame and pytmx frameworks and Tiled map editor. The game concept is simple and straightforward. The player character collect all coins and then reach the achievement flag to complete the level.</p>
+<p style='text-align: justify'><b>Ninja croaky</b> is a puzzle platformer game. Ninja croaky is made with python, pygame and pytmx frameworks and Tiled map editor. The game concept is simple and straightforward. The player character collect all coins and then reach the achievement flag to complete the level.</p>
 
 ![-------------------------------](./scr/ReadME/rainbow.png)
 
@@ -7,6 +7,8 @@
 ![](./scr/ReadME/Screenshot_1.png) 
 
 ![](./scr/ReadME/Screenshot_2.png)
+
+![](./scr/ReadME/Screenshot%20_3.png)
 
 ![-------------------------------](./scr/ReadME/rainbow.png)
 
