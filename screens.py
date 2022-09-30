@@ -163,10 +163,11 @@ class GameScreen(Screen):
         else:
             if DARK_SCREEN.get_alpha() < 126:
                 fade_in(DARK_SCREEN, 10)
-            else:
-                self.pause_ui.draw(DARK_SCREEN)
 
     def draw(self, display) -> None:
+        if self.is_paused:
+            self.pause_ui.draw(DARK_SCREEN)
+
         self.levels[self.current_level].draw(display)
         # pygame.draw.rect(display, 'red', self.player.rect, 1)
         # pygame.draw.rect(display, 'yellow', self.player.body_rect, 1)
