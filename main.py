@@ -12,7 +12,7 @@ class Game:
         self.__screen = screens.MainMenuScreen(self)
         self.__time = pygame.time.Clock()
         self.__BGM = pygame.mixer.Sound('./scr/audio/music.ogg')
-        self.__BGM.set_volume(.84)
+        self.__BGM.set_volume(.80)
         self.__BGM.play(-1)
         
     def run(self) -> None:
