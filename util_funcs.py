@@ -16,7 +16,6 @@ def lerp(goal_velocity, current_velocity, acceleration) -> float:
         return current_velocity - acceleration
     return goal_velocity
 
-
 def fade_in(screen, value) -> None:
     '''this used to increase a alpha value'''
     alpha = lerp(255, screen.get_alpha(), value)
@@ -35,17 +34,7 @@ def collision_list(rect:pygame.Rect, rect_list) -> list:
             collided_rects.append(r)
     return collided_rects
 
-def fit_to_window(size1, size2) -> tuple:
-    '''this return a size that will fit in window'''
-    ratio1 = size1[0] / size1[1]
-    ratio2 = size2[0] / size2[1]
-    if ratio1 > ratio2:
-        return (size2[0], size1[1] * size2[0] / size1[0]) 
-    else:
-        return (size1[0] * size2[1] / size2[1], size2[1])
-
-
-# this funtion taken from here -> https://stackoverflow.com/questions/24727773/detecting-rectangle-collision-with-a-circle
+# this algorithm obtained from here -> https://bit.ly/3CfwfmR. some steps are modified for my convenient
 def collide_circle(rect,   # rectangle info
               center_x, center_y, radius):  # circle info
     """ Detect collision between a rectangle and circle. """
