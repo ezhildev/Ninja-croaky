@@ -28,7 +28,7 @@
    eJzt1EENAEAIBDHQgH+vZ+DeG0ja1yiYKoCdpv8NkJR4kcfBPYkfeAMAWzyoAgCh
   </data>
  </layer>
- <layer id="15" name="saw" width="48" height="27">
+ <layer id="15" name="saw" width="48" height="27" locked="1">
   <properties>
    <property name="speed" type="float" value="3"/>
    <property name="x_direction" type="int" value="-1"/>
@@ -80,7 +80,7 @@
    eJzt00EJAAAIBEE72L+rCXwJgjjzuQK3EQAwl83CB/4Pd+kX7tIv7Cn1CQDl
   </data>
  </layer>
- <layer id="4" name="static_spikes" width="48" height="27">
+ <layer id="4" name="static_spikes" width="48" height="27" locked="1">
   <properties>
    <property name="rotation" type="float" value="0"/>
   </properties>
@@ -93,10 +93,10 @@
    <property name="rotation" type="float" value="180"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztzTENAAAMw7DCGH+kQ7BzT2VLuZMAAADQZI4+PwD0WkrLANk=
+   eJztwzENAAAIA7DJwL9SFOzhJG3SBAAAgE+mBICLBaBNAJE=
   </data>
  </layer>
- <layer id="23" name="active_spikes" width="48" height="27">
+ <layer id="23" name="active_spikes" width="48" height="27" locked="1">
   <properties>
    <property name="rotation" type="float" value="0"/>
   </properties>
@@ -104,7 +104,7 @@
    eJztw0EJAAAIBLALYf+sRjjwJ2ywBAAAAICrKeG7BdoPAKE=
   </data>
  </layer>
- <layer id="3" name="coins" width="48" height="27">
+ <layer id="3" name="coins" width="48" height="27" locked="1">
   <data encoding="base64" compression="zlib">
    eJzt1jEKACAMA8CO/f+LRejUTaiCcAchPwiJAPhXVrgjWwNwxo4Cr03vjr8NbAsArQBR
   </data>

@@ -189,7 +189,7 @@ class CreditScreen(Screen):
         self.content3_txt = entities.Text(content3, position=(DISPLAY_CENTER[0], GRID_SIZE * 15))
         self.content4_txt = entities.Text(content4, position=(DISPLAY_CENTER[0], GRID_SIZE * 18))
         self.content5_txt = entities.Text(content5, position=(DISPLAY_CENTER[0], GRID_SIZE * 21))
-        self.info = entities.Text('Press Esc for back to Menu.', SMALL_FONT, position=(DISPLAY_CENTER[0], GRID_SIZE * 24))
+        self.info = entities.Text('[ Press Esc for back to Menu ]', SMALL_FONT, position=(DISPLAY_CENTER[0], GRID_SIZE * 24))
         
         self.txts = pygame.sprite.Group(self.credits_txt, self.content1_txt, self.content2_txt, self.content3_txt, self.content4_txt, self.content5_txt,self.info)
         self.is_back_to_menu = False
